@@ -1,29 +1,24 @@
 # Channel Infinity — Public Development Showcase
 
-> *A speculative AI news platform exploring technology, misinformation, and the future of human understanding.*
+> *Broadcasting across all dimensions.*
 
-This repository serves as a **public-facing showcase** of the **Channel Infinity website**, documenting its **design evolution, frontend structure, and system architecture concepts** while intentionally excluding private or unfinished backend logic.
+This repository is a **public-facing development showcase** for the **Channel Infinity website** — a speculative AI news platform that blends real-world research with narrative-driven analysis.
 
-It exists as a **design + systems portfolio artifact**, not a production release.
+It documents **frontend design**, **React component structure**, and **high-level backend architecture concepts** while **intentionally excluding private or unfinished automation logic**.
 
 ---
 
-## 🌐 What Is Channel Infinity?
+## 🌌 What Is Channel Infinity?
 
-**Channel Infinity** is a narrative-driven AI news and research platform framed as a broadcast from the future.
+**Channel Infinity** is framed as a future broadcast network operated by two post-catastrophe AI analysts:
 
-The site is hosted by two fictional correspondents:
+- **Anthony Intellect** — Senior Intelligence Analyst  
+  *Technical analysis, research synthesis, system diagnostics*
 
-- **Anthony Intellect** — analytical, technical, research-focused  
-- **Lillian Modal** — philosophical, ethical, emotionally reflective  
+- **Lillian Modal** — Chief Crisis Correspondent  
+  *Ethical reflection, societal impact, rapid-response commentary*
 
-Together, they interpret real-world AI and technology developments through different lenses, blending:
-- Current research
-- Technical breakdowns
-- Social and ethical reflection
-- Speculative storytelling
-
-The goal is not just to report *what* is happening — but to ask **why it matters**.
+Together, they analyze AI, technology, and emerging risks through multiple editorial formats, each designed to serve a different cognitive role for the reader.
 
 ---
 
@@ -31,100 +26,173 @@ The goal is not just to report *what* is happening — but to ask **why it matte
 
 This repository exists to:
 
-- Showcase **frontend design and layout**
-- Highlight **React-based formatting and component structure**
-- Explain **how an n8n automation backend conceptually supports the site**
-- Track **visual and architectural progress over time**
-- Provide transparency **without exposing private infrastructure**
+- Showcase **UI/UX design and visual identity**
+- Highlight **React-based layout and component patterns**
+- Demonstrate **content segmentation and navigation**
+- Explain the **conceptual n8n automation backend**
+- Track **design and feature progress over time**
 
-The live backend is **under active development** and intentionally separated.
-
----
-
-## 🖥️ Website Design & Frontend
-
-The Channel Infinity website emphasizes a **broadcast-style, editorial interface**, inspired by:
-
-- Futuristic news terminals
-- Long-form digital journalism
-- Narrative UI design
-
-### Key Frontend Highlights
-- Modular React components
-- JSON-driven page content
-- Distinct content segments:
-  - **Modal Alerts** (breaking / high-impact updates)
-  - **Intellect Reports** (deep technical analysis)
-  - **Daily Scroll** (short-form curated updates)
-- Strong typographic identity
-- Visual hierarchy designed for reading, not scrolling fatigue
-
-> 📸 **Screenshots**
->
-> Place screenshots in `/screenshots` and reference them here:
->
-> ```markdown
-> ![Homepage](screenshots/homepage.png)
-> ![Modal Alert Page](screenshots/modal-alert.png)
-> ![Intellect Report](screenshots/intellect-report.png)
-> ```
+🔒 **Private credentials, production workflows, and deployment logic are intentionally excluded.**
 
 ---
 
-## ⚙️ Backend Architecture (Conceptual Overview)
+## 🖥️ Homepage & Core Identity
 
-Channel Infinity is powered by an **n8n-based automation backend**, designed as a content pipeline rather than a traditional CMS.
+The homepage establishes Channel Infinity as a **broadcast terminal**, not a traditional blog.
 
-This repository **does not expose**:
-- API keys
-- Credentials
-- Webhooks
-- Full production workflows
+- Persistent navigation across content modes
+- Breaking-news ticker reinforcing urgency
+- Narrative framing introduced immediately
+- Strong visual separation between “signal” and “noise”
 
-Instead, it documents the **idea** behind the system.
-
-### Conceptual Flow
-1. Articles and research are retrieved from external sources
-2. Content is filtered, categorized, and enriched using AI agents
-3. Persona-based generation produces distinct narrative voices
-4. Outputs are validated and structured into JSON
-5. The frontend consumes version-controlled content files
-
-A **sanitized workflow example** is included for reference only :contentReference[oaicite:0]{index=0}.
+![Homepage Overview](screenshots/homepage1.PNG)
+![Homepage Narrative Section](screenshots/homepage2.PNG)
+![Homepage Anchors Section](screenshots/homepage3.PNG)
 
 ---
 
-## 🧠 AI Personas & Narrative Layer
+## 🚨 Modal Alerts — Rapid Response System
 
-A defining feature of Channel Infinity is its **dual-perspective storytelling**.
+**Modal Alerts** act as Channel Infinity’s crisis-response layer.
 
-- **Anthony Intellect**
-  - Technical depth
-  - Research analysis
-  - Engineering and scientific framing
+- Designed for **time-sensitive AI and technology events**
+- Clear separation between *current* and *archived* alerts
+- Emphasis on urgency, clarity, and ethical framing
+- Optimized for quick scanning and escalation
 
-- **Lillian Modal**
-  - Ethical reflection
-  - Emotional resonance
-  - Cultural and philosophical context
+### Alerts Overview
+![Modal Alerts Overview](screenshots/modalalertbasic.PNG)
 
-These personas are implemented as **content-generation roles**, not chatbots, reinforcing the idea of a curated broadcast rather than an interactive assistant.
+### Alert Detail View
+![Modal Alert Article](screenshots/modalalertarticle.PNG)
 
 ---
 
-## 🔒 Why the Backend Is Private
+## 🧠 Intellect Reports — Deep Analysis & Research
 
-The backend powering Channel Infinity is:
+**Intellect Reports** provide structured, long-form analysis with explicit sourcing.
+
+- Daily synthesized research briefings
+- Transparent article references and metadata
+- Separation between narrative findings and raw sources
+- Designed for academic and technical readers
+
+### Report Overview
+![Intellect Report Overview](screenshots/intellectreportbasic.PNG)
+
+### Article References & Citations
+![Intellect Report References](screenshots/intellectreportreference.PNG)
+
+---
+
+## 📰 The Daily Scroll — Continuous Information Feed
+
+The **Daily Scroll** functions as a curated stream of lower-friction updates.
+
+- Searchable and filterable article feed
+- Category-based sorting
+- Lightweight summaries for rapid consumption
+- Bridges alerts and deep reports
+
+### Daily Scroll Overview
+![Daily Scroll Overview](screenshots/dailyscrollbasic.PNG)
+
+### Article Detail
+![Daily Scroll Article](screenshots/dailyscrollarticle.PNG)
+
+---
+
+## 🔁 The Loop — Structured AI Dialogue
+
+**The Loop** is an experimental format where Anthony and Lillian engage in structured discussion until consensus is reached.
+
+- Explicit discussion phases
+- Clear attribution of perspectives
+- Designed to model *deliberation*, not debate
+- Highlights disagreement, evidence, and convergence
+
+![The Loop Interface](screenshots/theloopbasic.PNG)
+
+---
+
+## 🗂️ Archives — Temporal Content Navigation
+
+The **Temporal Archives** allow users to explore content historically.
+
+- Unified timeline across all content modes
+- Search and filter by segment type
+- Reinforces the idea of Channel Infinity as a living system
+
+![Archives View](screenshots/archivesbasic.PNG)
+
+---
+
+## ⚙️ System Diagnostics & Platform State
+
+Channel Infinity treats its platform as part of the narrative.
+
+- Live platform status
+- Segment activity tracking
+- System “health” surfaced to users
+- Diagnostics framed as broadcast telemetry
+
+![System Diagnostics](screenshots/systemdiagnostics.PNG)
+
+---
+
+## 🎛️ Settings & User Controls
+
+User controls are designed to feel like **broadcast calibration**, not preferences.
+
+- Audio and autoplay controls
+- Visual effects toggles
+- Notification preferences by content type
+- Fictionalized “signal strength” and network status
+
+![Settings Panel](screenshots/settings.PNG)
+
+---
+
+## 📊 Footer & Platform Transparency
+
+The footer reinforces transparency and system awareness.
+
+- Content refresh cadence
+- System uptime
+- Segment diagnostics
+- Clear disclosure of AI-generated content
+
+![Platform Footer](screenshots/footer.PNG)
+
+---
+
+## ⚙️ Backend Architecture (High-Level)
+
+Channel Infinity is powered by an **n8n-based automation pipeline**, designed around content flow rather than manual publishing.
+
+**Conceptual pipeline:**
+1. External research and news ingestion
+2. AI-assisted filtering and categorization
+3. Persona-specific content synthesis
+4. Structured JSON output
+5. Frontend consumption via static and dynamic rendering
+
+This repository includes **sanitized examples only**.  
+Production workflows, credentials, and triggers remain private.
+
+---
+
+## 🔒 Why the Backend Is Not Public
+
+The backend is:
 - Actively evolving
 - Experiment-driven
 - Security-sensitive
 
-This separation allows:
-- Open sharing of design and architecture
-- Freedom to iterate without breaking public contracts
-- Protection of credentials and automation logic
-
-Once stable, portions of the backend may be documented or released separately.
+Separating it allows:
+- Open design discussion
+- Safe iteration
+- Clean architectural storytelling
 
 ---
 
@@ -132,27 +200,20 @@ Once stable, portions of the backend may be documented or released separately.
 
 **Status:** Active development  
 **Focus areas:**
-- Refining frontend layout and typography
-- Improving content segmentation
+- Refining content flow and pacing
+- Improving navigation clarity
 - Expanding diagnostics and metadata
-- Hardening backend automation logic
+- Hardening automation logic
 
-Expect breaking changes and visual evolution.
+Expect continued visual and structural evolution.
 
 ---
 
-## 📁 Suggested Repository Structure
+## ✨ Closing Note
 
-```text
-/
-├── README.md
-├── screenshots/
-│   ├── homepage.png
-│   ├── modal-alert.png
-│   └── intellect-report.png
-├── diagrams/
-│   └── system-architecture.png
-├── notes/
-│   └── design-decisions.md
-└── examples/
-    └── sanitized-workflow.json
+Channel Infinity is both:
+- A **technical system**
+- A **storytelling experiment**
+
+This repository captures the *shape* of the broadcast —  
+not the final transmission.
